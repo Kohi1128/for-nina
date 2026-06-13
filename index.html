@@ -15,25 +15,25 @@
 
     <h1>Are you Kokak?</h1>
 
-    <div class="buttons">
-      <button onclick="go()">Yes</button>
-      <button id="noBtn">No</button>
+   <div class="buttons">
+     <button onclick="yes()">Yes</button>
+      <button onclick="no()">No</button>
     </div>
   </div>
 
   <script>
-    function go() {
-      window.location.href = "charles.html";
-    }
+function yes() {
+  window.location.href = "charles.html";
+}
 
-    const noBtn = document.getElementById("noBtn");
-
-    noBtn.addEventListener("mouseover", () => {
-      noBtn.style.position = "relative";
-      noBtn.style.left = Math.random() * 200 + "px";
-      noBtn.style.top = Math.random() * 200 + "px";
-    });
-  </script>
+function no() {
+  document.body.innerHTML = `
+    <div class="gate-box">
+      <h1>para sa crush ko lang to. pwede ka na mag exit.</h1>
+    </div>
+  `;
+}
+</script>
 
 </body>
 </html>
