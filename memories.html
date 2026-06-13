@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Memories </title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+<body class="memory-body">
+
+<audio id="bgm" loop>
+  <source src="music/Tothapi - Panata (Lyrics).mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-overlay" id="musicOverlay">
+  <button onclick="startMusic()">▶ Start</button>
+</div>
+
+<div class="stars"></div>
+<div class="twinkling"></div>
+
+<div class="nav">
+  <a href="home.html">Back to Home</a>
+  
+</div>
+
+<h1 class="page-title">Memories</h1>
+
+<!-- March -->
+<div class="timeline">
+
+  <div class="timeline-item">
+    <h2>March</h2>
+    <p class="caption">The beginning of everything. </p>
+
+    <div class="photos">
+      <img src="images/march-1.jpg">
+     <img src="images/march-2.jpg">
+     <img src="images/march-3.jpg">
+  </div>
+
+  <!-- April -->
+  <div class="timeline-item">
+    <h2>April</h2>
+    <p class="caption">It was the month I realized I had already fallen in love. The more I learned about you, the more my curiosity grew, and the more I found myself wanting to know every part of you.</p>
+
+    <div class="photos">
+      <img src="images/april-1.jpg">
+      <img src="images/april-2.jpg">
+      <img src="images/april-3.jpg">
+      <img src="images/april-4.jpg">
+      <img src="images/april-5.jpg">
+      <img src="images/april-6.jpg">
+      <img src="images/april-7.jpg">
+      <img src="images/april-8.jpg">
+      <img src="images/april-9.jpg">
+      <img src="images/april-10.jpg">
+      <img src="images/april-11.jpg">
+      <img src="images/april-12.jpg">
+      <img src="images/april-13.jpg">
+      <img src="images/april-14.jpg">
+      <img src="images/april-15.jpg">
+      <img src="images/april-16.jpg">
+      <img src="images/april-17.jpg">
+      <img src="images/april-18.jpg">
+      <img src="images/april-19.jpg">
+      <img src="images/april-20.jpg">
+
+    </div>
+  </div>
+
+  <!-- May -->
+  <div class="timeline-item">
+    <h2>May</h2>
+    <p class="caption">A bittersweet month, but one that taught me so much. I’ll always be grateful for every moment we shared, even in saying goodbye.</p>
+
+    <div class="photos">
+       <img src="images/May-1.jpg">
+      <img src="images/may-2.jpg">
+      <img src="images/may-3.jpg">
+      <img src="images/may-4.jpg">
+      <img src="images/may-5.jpg">
+      <img src="images/may-6.jpg">
+      <img src="images/may-7.jpg">
+      <img src="images/may-8.jpg">
+      <img src="images/may-9.jpg">
+      <img src="images/may-10.jpg">
+      <img src="images/may-11.jpg">
+      <img src="images/may-12.jpg">
+      <img src="images/may-13.jpg">
+      <img src="images/may-14.jpg">
+      <img src="images/may-15.jpg">
+      <img src="images/may-16.jpg">
+      <img src="images/may-17.jpg">
+      <img src="images/may-18.jpg">
+      <img src="images/may-19.jpg">
+      <img src="images/may-20.jpg">
+      <img src="images/may-21.jpg">
+      <img src="images/may-22.jpg">
+      <img src="images/may-23.jpg">
+      <img src="images/may-24.jpg">
+      <img src="images/may-25.jpg">
+      <img src="images/may-26.jpg">
+    </div>
+  </div>
+
+<!-- June -->
+  <div class="timeline-item">
+    <h2>June</h2>
+    <p class="caption"> Then we found our way back to each other, reconnecting to see where it might lead. With you, I found peace even in the uncertainty of tomorrow. No expectations. No pressure. Just gratitude for what we have today and 
+      excitement for whatever tomorrow may bring.
+    </p>
+
+    <div class="photos">
+      <img src="images/june-1.jpg">
+      <img src="images/june-2.jpg">
+      <img src="images/june-3.jpg">
+      <img src="images/june-4.jpg">
+      <img src="images/june-5.jpg">
+      <img src="images/june-6.jpg">
+      <img src="images/june-7.jpg">
+      <img src="images/june-8.jpg">
+      <img src="images/june-9.jpg">
+      <img src="images/june-10.jpg">
+
+    </div>
+  </div>
+
+</div>
+<script>
+function startMusic() {
+  const music = document.getElementById("bgm");
+  music.volume = 0.5;
+  music.play();
+
+  document.getElementById("musicOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>

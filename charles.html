@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>...</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="gate-body">
+
+  <div class="gate-box">
+
+      <img src="images/charles-1.jpg" alt="Nina" class="gate-img">
+
+    <h1>Do you like Cha?</h1>
+
+    <div class="buttons">
+      <button onclick="go()">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+  </div>
+
+  <script>
+    function go() {
+      window.location.href = "home.html";
+    }
+
+    const noBtn = document.getElementById("noBtn");
+
+    noBtn.addEventListener("mouseover", () => {
+      noBtn.style.position = "relative";
+      noBtn.style.left = Math.random() * 200 + "px";
+      noBtn.style.top = Math.random() * 200 + "px";
+    });
+  </script>
+
+</body>
+</html>
